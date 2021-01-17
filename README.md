@@ -7,9 +7,9 @@ to run
 - ```clone repo```
 
 
-- ```install pip3, python3-venv
-and
-python3```
+- ```install pip3, python3-venv, and python3```
+
+
 
 
 - ```python3 -m venv bot_env```
