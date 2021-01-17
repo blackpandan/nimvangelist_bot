@@ -23,5 +23,5 @@ async def on_message(msg):
     elif msg.content.startswith("brb"):
         await msg.channel.send("ahmed why this na")
 
-client.run(os.getenv("NIMBOT_TOKEN"))
+client.run(os.environ.get("NIMBOT_TOKEN"))
 
