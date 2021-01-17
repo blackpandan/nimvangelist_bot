@@ -7,7 +7,7 @@ to run
 - ```clone repo```
 
 
-- ```install pip3, python3-venv, and python3```
+- install gcc, python-dev, python3-venv, and python3
 
 
 
