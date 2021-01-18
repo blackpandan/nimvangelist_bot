@@ -20,8 +20,10 @@ async def on_message(msg):
         await msg.channel.send("nawaoo wetin the work you")
     elif msg.content.startswith("$help"):
         await msg.channel.send("welcome to noob for noobs , contact ahmed the nim dev")
+    elif msg.content.startswith("$nim"):
+        await msg.channel.send("linux is trash, nim is POWAAA")
     elif msg.content.startswith("brb"):
         await msg.channel.send("ahmed why this na")
 
-client.run(os.environ.get("NIMBOT_TOKEN"))
+client.run("ODAwMzcwMjgwNTc2MDU3MzY0.YARI6Q.6St7iIx-w-PTtLSB4TKfE6TC0OQ")
 
