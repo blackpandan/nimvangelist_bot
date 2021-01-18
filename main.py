@@ -21,7 +21,7 @@ async def on_message(msg):
     elif msg.content.startswith("Fuck"):
         await msg.channel.send("nawaoo wetin the work you")
     elif msg.content.startswith("$help"):
-        await msg.channel.send("welcome to noob for noobs,\nyou can visit https://nim-lang.org\n  contact ahmed the nim dev for more info")
+        await msg.channel.send("welcome to noob for noobs,\nyou can visit https://nim-lang.org\n \n contact ahmed the nim dev for more info\n")
     elif msg.content.startswith("$nim"):
         await msg.channel.send("linux is trash, nim is POWAAA")
     elif msg.content.startswith("brb"):
