@@ -14,6 +14,8 @@ async def on_message(msg):
 
     if msg.content.startswith("$stress"):
         await msg.channel.send("i am dying inside")
+    elif msg.content.startswith("Faith James"):
+        await msg.channel.send(" how did you know my creator")
     elif msg.content.startswith("$commands"):
         await msg.channel.send("$stress\n$help\n")
     elif msg.content.startswith("Fuck"):
