@@ -12,6 +12,17 @@ async def on_message(msg):
     if msg.author == client.user:
         return
 
+    profanity = ["fuck"]
+
+    par = msg.content
+    broken = par.split(" ")
+
+    for i in broken:
+        for prof in profanity:
+            if i.lower() == prof:
+                await msg.channel.send("use of this word is not advisable")
+                break
+
     if msg.content.startswith("$stress"):
         await msg.channel.send("i am dying inside")
     elif msg.content.startswith("Faith James"):
@@ -26,6 +37,14 @@ async def on_message(msg):
         await msg.channel.send("linux is trash, nim is POWAAA")
     elif msg.content.startswith("brb"):
         await msg.channel.send("ahmed why this na")
+    elif msg.content.startswith("sammy") or msg.content.startswith("sam p"):
+        await msg.channel.send("anywhere you see am bill am")
+
+    elif msg.content.startswith("test"):
+        await msg.channel.send(broken)
+    
+    
+    
 
 client.run(os.environ.get("NIMBOT_TOKEN"))
 
