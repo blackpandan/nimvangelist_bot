@@ -12,7 +12,7 @@ async def on_message(msg):
     if msg.author == client.user:
         return
 
-    profanity = ["fuck"]
+    profanity = ["fuck", "wtf", "waka", "ubanka", "ewu", "your mother", "your father"]
 
     par = msg.content
     broken = par.split(" ")
@@ -42,9 +42,18 @@ async def on_message(msg):
 
     elif msg.content.startswith("test"):
         await msg.channel.send(broken)
-    
-    
-    
+
+    elif msg.content.startswith("$pres"):
+        v = msg.content
+        val = v.split(" ")
+        val.pop(0)
+        game = " ".join(val)
+        await client.change_presence(activity=discord.Game(name=game))
+        await msg.channel.send(f"presence sucessfully changed, game added\n ```{game}```")
+
+@client.event
+async def on_member_join(member):
+    await msg.channel.send(f"Hello {member} welcome to noobs for noobs")
 
 client.run(os.environ.get("NIMBOT_TOKEN"))
 
